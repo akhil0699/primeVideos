@@ -1,0 +1,100 @@
+.nav-container {
+  padding: 0.5rem 2rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 8;
+  top: 0;
+  width: 100%;
+}
+.nav{
+  background: #1d1d1d;
+  position: fixed;
+}
+.ham-menu{
+  padding: 0.5rem;
+  display: none;
+  color: #fff;
+}
+.menu-container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  margin-right: 2rem;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+a {
+  color: rgb(187, 187, 187);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.navbar a:hover{
+  border-bottom: 1px solid #fff;
+}
+.active{
+  color: #fff;
+}
+
+.logo img {
+  width: 6rem;
+}
+.menu a{
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px){
+  .navbar,.menu{
+    display: none;
+  }
+  .ham-menu{
+    display: inline-block;
+    cursor: pointer;
+  }
+  .nav-container{
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+.searchBar {
+  position: fixed;
+  top: 4rem;
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 9;
+  background-color: #1d1d1d;
+}
+.searchBar div{
+  border-bottom: 2px solid #fff;
+}
+.close,.search{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.close:focus-visible .search:focus-visible{
+  outline: none;
+}
+.searchBar input {
+  margin: 0 0.5rem;
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  color: #fff;
+}
+.searchBar input:focus-visible {
+  outline: none;
+}
+
